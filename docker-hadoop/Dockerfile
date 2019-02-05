@@ -5,7 +5,7 @@ ADD OpenJDK8U-jdk_x64_linux_hotspot_8u202b08.tar.gz /usr/local/
 
 RUN mv /usr/local/jdk8u202-b08 /usr/local/jdk1.8
 
-ENV JAVA_HOME /usr/local/jdk1.7
+ENV JAVA_HOME /usr/local/jdk1.8
 ENV PATH $JAVA_HOME/bin:$PATH
 
 RUN yum -y install which && yum clean all
